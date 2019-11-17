@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Excel Import</title>
+</head>
+<body>
+ <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+     <br><br>
+     <a href="{% url 'download' %}"><b>Download</b></a>
+  </form>
+</body>
+</html>
